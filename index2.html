@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="icon" href="/assets/357411373_300085419117486_3065087049896503052_n.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+    <div class="nav__home">
+        <a href="index.html"><i class="fa-solid fa-house fa-bounce"></i></a>
+    </div>
+    <header class="header">
+        
+        <section class="header_section">
+            <h3 class="header_section-h3">Hi, my name is Nelson and you will know about me.</h3>
+        </section>
+        
+    </header>
+
+    <!-- Comienzo de cuerpo de contenido -->
+
+    <div class="div_container">
+
+        <aside class="aside">
+
+            <section class="aside__section">
+
+                <div class="aside__img-container">
+
+                    <img class="aside__img" src="1686667770773.jpeg" alt="i'am" name="img" onMouseOver=pasa(1); onMouseOut=pasa(2);>
+
+                </div>
+
+                <div class="aside__nombre" id="TEXTO1" style="visibility:visible; display: flex;justify-content: center;">
+                    <p class="">Nelson Ruiz</p>
+                    <p class="">Pasar cursor en la foto</p>
+                </div>
+                
+            </section>
+        </aside>
+
+        <main class="main_container">
+ 
+
+            <p class="main__container-parrafo">
+                What I like is learning new things, it's very interesting when you're deepening your understanding of a subject. As for example in software development or programming. The only thing I don't like is my lack of concentration. I cannot fully concentrate on one subject.
+            </p>
+            <p class="main__container-parrafo">
+                My goal is to be able to work remotely and learn English and the necessary technologies. I started in the computer world because of similar tastes. Everything related to systems and their development caught my attention.
+            </p>
+            <p class="main__container-parrafo">
+                My website offers mobile spare parts sales service, accessories and provides repair service. We offer everything necessary to satisfy the needs of the client or entity. We have quality service and materials.
+            </p>
+            <p class="main__container-parrafo">
+                My last job is as a community manager and social media. Advertising for a small business. Also in the creation of audiovisual content and brand design.
+            </p>
+        </main>
+        
+    </div>
+
+    <!-- Pie de pagina xd -->
+
+    <footer class="footer">
+        <p>In construction</p>
+        
+    </footer>
+    
+
+    <script>
+        var estado = true;
+        setTimeout("ver()", 500);
+        function ver() {
+            estado = !estado;
+            if (estado == true)
+                TEXTO1.style.visibility = "visible";
+            else
+                TEXTO1.style.visibility = "hidden";
+            setTimeout("ver()", 500);
+        }
+
+        function pasa(valor) {
+            if (valor == 1)
+                img.src = "/2.jpg"
+            else
+                img.src = "/1686667770773.jpeg"
+        }
+        
+    </script>
+</body>
+</html>
